@@ -1,0 +1,101 @@
+body{
+    margin: 0px 10px 0px 10px;
+    display: grid;
+    font-size: 14px;
+    color:black;
+    background-color: black;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    position:relative;
+    font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 200;
+    z-index: -2;
+}
+.banana{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height: auto;
+    margin: 130px 0px 0px 0px;
+    background-color: coral;
+    z-index: 300;
+}
+
+header{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-repeat: repeat;
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    background-color: pink;
+
+}
+
+article{
+    margin: 6px 6px 6px 6px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: green;
+    height: 650px;
+    overflow: hidden;
+    z-index: 200;
+}
+
+
+.art2{
+    margin: 6px 6px 6px 6px;
+    height:275px;
+    background-color: white;
+    z-index: -1;
+    overflow: hidden;
+    position: relative;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.art3{
+    margin: 6px 6px 6px 6px;
+    height:275px;
+    background-color: purple;
+    z-index: -1;
+    overflow: hidden;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative;
+}
+
+.art4{
+    margin: 6px 6px 6px 6px;
+    height:275px;
+    background-color: orange;
+    z-index: -1;
+    overflow: hidden;
+    position: relative;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+
+    grid-column-end: 5;
+}
+
+
+section{
+    text-align: center;
+    color: white;
+
+    margin: 15px 0px 0px 0px;
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    font-size: 16px;
+    padding: 10px 0px 10px 0px;
+
+}
