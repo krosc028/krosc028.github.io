@@ -490,12 +490,18 @@ li{
     margin: 10px;
     display: inline;
 }
-
+.w{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height: 50px;
+    position: relative;
+}
 .website{
     position: absolute;
     bottom: 0px;
     right:10px;
     color:white;
+    font-size: 30px;
 }
 
 
