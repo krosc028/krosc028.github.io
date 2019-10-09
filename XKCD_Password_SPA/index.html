@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="XKXD_style.css" type="text/css">
+    <script src="javafile.js"></script>
+    <title>XKCD Password SPA</title>
+</head>
+
+<body>
+
+    <h1> XKCD Password Generator</h1>
+    <div class="contain">
+        Minimum Word Length<select id="MinWord">
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select><br>
+
+        Maximum Word Length<select id="MaxWord">
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+        </select><br>
+
+        Max Length<input id="MaxLength" type="text" value="21" >
+        <p id="easy"><input id="check_1" type="checkbox" name="group" value="type">Easy Sentence</p>
+        <p id="number"><input id="check_2" type="checkbox" name="group" value="number">Number Subsitutions<br></p>
+
+        <button onclick= "update()">Submit</button>
+    </div>
+    <div class="wrong"></div>
+    <h1 class="none">Possible password</h1>
+    <div class="result">
+        <table id="table"></table>
+    </div>
+
+
+</body>
+</html>
