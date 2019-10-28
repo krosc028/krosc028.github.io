@@ -25,7 +25,7 @@ async function update(){
 async function getWeatherData() {
     let zip= zipcode();
 
-    const response = await fetch("http://api.openweathermap.org/data/2.5/forecast?" +
+    const response = await fetch("https://api.openweathermap.org/data/2.5/forecast?" +
         "zip=" + zip +
         "&units=imperial&appid=2769ef347c8576fb6f5bc71f4e8a796a");
     const data = await response.json();
