@@ -1,0 +1,349 @@
+body{
+    font-family: "Nimbus Sans", sans-serif;
+    font-size: 12pt;
+    position: relative;
+    line-height: 1.6em;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 50pt;
+    color: #86c7a6
+}
+
+#sub_head{
+    text-align: center;
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-size: 24pt;
+    line-height: .6em;
+    color: white;
+    position: relative;
+    top: -15px;
+}
+#box1{
+    position: relative;
+    background-color: #86c7a6;
+    margin: auto;
+    z-index: -1;
+    top: -75px;
+    width: 425px;
+    height: 45px;
+    border-radius: 50px;}
+.contain{
+    text-align: right;
+    width: 70%;
+    height: 100px;
+    /*background-color: lightgrey;*/
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    top: -40px;
+    margin: auto;
+}
+
+#Destination{
+    width: 230px;
+    height: 13px;
+    font-family: "Nimbus Sans", sans-serif;
+    padding-top: 8px;
+    padding-left: 10px;
+    float: left;
+    margin-left: -10px;
+    font-size: 11pt;
+}
+#SearchWord{
+    width: 230px;
+    height: 13px;
+    font-family: "Nimbus Sans", sans-serif;
+    padding-top: 8px;
+    padding-left: 10px;
+    float: left;
+    margin-left: -10px;
+    font-size: 11pt;
+}
+#Radius{
+    width: 50px;
+    height: 20px;
+    font-family: "Nimbus Sans", sans-serif;
+    padding-left: 10px;
+    float: left;
+    margin-left: -10px;
+    font-size: 11pt;
+}
+
+.para{
+    font-family: "Nimbus Sans", sans-serif;
+    margin-right: 20px;
+    padding-top: 2px;
+    font-style: italic;
+}
+#special{
+    font-family: "Nimbus Sans", sans-serif;
+    padding-top: 0;
+    margin-right: 20px;
+    font-style: italic;
+}
+
+button{
+    position: relative;
+    text-align: center;
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-size: 20pt;
+    width: 90px;
+    height: 50px;
+    color: white;
+    border: solid #e1e1e1 1px;
+    margin-left: -10px;
+    background-color: #86c7a6;
+    padding-bottom: 5px;
+    border-radius: 50%;
+    z-index: 22;
+    top: -20px;
+}
+
+button:hover{
+    background-color: #6caa8a;
+    cursor: pointer;
+}
+select:focus{
+    outline: none;
+}
+
+.center{
+    position: relative;
+    width: 100px;
+    margin: auto;
+}
+button:focus{
+    outline: none;
+}
+
+
+/*start of API relevant CSS*/
+
+#result{
+    background-color: #eaeaea;
+    position:relative;
+    margin:auto;
+    width: 97%;
+    height: auto;
+    margin-top: 15px;
+
+}
+
+.centering{
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 32pt;
+    line-height: .6em;
+    position: relative;
+    color: #86c7a6;
+    top: 30px;
+    text-align: center;
+}
+
+
+.weatherONcity{
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-size: 28pt;
+    line-height: 1.5em;
+    text-align: center;
+    color: black;
+}
+
+.weather{
+    margin:auto;
+    width:auto;
+    height: auto;
+    position:relative;
+    margin-top:10px;
+}
+.weatherHolder{
+    width:96%;
+    height: auto;
+    margin:auto;
+    position: relative;
+    overflow: scroll;
+    white-space: nowrap;
+}
+.weather_spots{
+    height: 425px;
+    width: 300px;
+    margin: 10px 5px 10px 5px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+}
+
+.timeP{
+    text-align: center;
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-size: 14pt;
+    line-height: .6em;
+    position: relative;
+    top: -15px;
+}
+
+.dateP{
+    text-align: center;
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 24pt;
+    line-height: .6em;
+    color: #86c7a6;
+}
+
+.tempicon{
+    width: 50px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.icon{
+    width: 50px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.type_words{
+    font-family: "Nimbus Sans", sans-serif;
+    margin-right: 20px;
+    display: inline;
+    padding-top: 2px;
+    font-style: italic;
+    position: relative;
+    top: -15px;
+}
+
+.type_words2{
+    font-family: "Nimbus Sans", sans-serif;
+    margin-right: 20px;
+    display: inline;
+    padding-top: 2px;
+    font-style: italic;
+    position: relative;
+    top: -25px;
+}
+
+.norm{
+    font-style: normal;
+    font-weight: bold;
+    color: #86c7a6;
+}
+
+.new_norm{
+    font-style: normal;
+    font-weight: bold;
+    color: #86c7a6;
+    margin-left: 90px;
+}
+
+.line1{
+    position: absolute;
+    background-color: #86c7a6;
+    margin: auto;
+    bottom: 20px;
+    width: 250px;
+    height: 5px;
+    left: 25px;
+    border-radius: 5px;
+}
+
+.line2{
+    position: absolute;
+    background-color: #86c7a6;
+    margin: auto;
+    top: 105px;
+    left: 25px;
+    width: 250px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.arrow1{
+    position: absolute;
+    z-index: 2;
+    left: -25px;
+    top: 175px;
+    width: 30px;
+    cursor: pointer;
+ }
+
+.arrow2{
+    position: absolute;
+    z-index: 2;
+    right: 16px;
+    top: 175px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.gallery{
+    width:95%;
+    position: relative;
+    top: -25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+}
+
+.imageHolder{
+    position: relative;
+    width: 97.5%;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+    display:table-cell; vertical-align:middle;
+    border: solid white 10px;
+}
+
+.imageinfo{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #86c7a6;
+    color: white;
+    text-align: center;
+}
+.imageHolder:hover .imageinfo {
+    opacity: 1;
+}
+.typeimage{
+    width: 97%;
+    position: relative;
+    top: 150px;
+}
+.imagebackground{
+    min-height: 100%;
+    max-height: 300%;
+    min-width: 100%;
+    max-width: 300%;
+}
+
+.makeBreak{
+    height: 40px;
+}
+
+
+/*footer portion*/
+footer{
+    height: 40px;
+    position: relative;
+    bottom: -1px;
+    font-size: 8pt;
+    text-align: right;
+    font-style: italic;
+    margin-right: 20px;
+}
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+    <script src="scripts.js"></script>
+
+    <title>Weather Travel</title>
+</head>
+
+
+
+<body>
+<h1> Travel Planner </h1>
+<p id="sub_head">(weather and images)</p>
+<div id="box1"></div>
+<div class="contain">
+
+    <div class="para">Travel Destination (zip code)</div><div><input id="Destination" type="text" onchange="zipcode()" value="55414"></div>
+    <div class="para">Images Around Location About</div><div><input id="SearchWord" type="text" value="food"></div>
+    <div id="special">Search Radius(mi)</div><div><select id="Radius">
+    <option>5</option>
+    <option>10</option>
+    <option>15</option>
+    <option>20</option>
+    </select></div>
+</div><!--end of contain-->
+
+    <div class="center"><button onclick="update()" >Submit</button></div>
+
+
+
+<div id="result">
+
+</div>
+<footer>by Kendra</footer>
+
+
+</body>
+</html>

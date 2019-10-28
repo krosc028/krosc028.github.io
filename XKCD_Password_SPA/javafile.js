@@ -419,3 +419,59 @@ var string_verbs= "crawl\tknit\tturn\n"+"arise\n" + "awake\n" + "be\n" + "bear\n
     "bend\tpass\n" + "bounce\tride\n" + "catch\trun\n" + "dribble\tserve\n" + "hit\tshoot\n" + "hop\tsit\n" + "jump\tskip\n" + "kick\tstretch\n" + "kneel\tthrow\n" +
     "lie\twalk"+ "ask\topen\n" + "calculate\tpaint\n" + "close\tplay\n" + "count\tread\n" + "cut\tsay\n" + "draw\tshow\n" + "experiment\tsing\n" + "explain\tspell\n" +
     "give\tstudy\n" + "listen\tteach\n" + "observe\tthink" +"was\n were\n is\n are \n go \n get \n got";
+
+
+
+
+
+
+
+
+function weatherinfo(x){
+    let keyWord = x;
+    var string_word;
+    switch (keyWord) {
+        case "clear":
+            string_word= "<span class='norm'>Clear  </span> ("+ list_array[i].weather.description + ") <br>" ;
+            break;
+        case "cloud":
+            string_word= "<span class='norm'>Clouds  </span> ("+ list_array[i].weather.description + ") <br>"+
+                "<span class='norm'>Clouds Coverage  </span>" + list_array[i].clouds.all
+                + "% <br>" ;
+            break;
+        case "rain":
+            string_word= "<span class='norm'>Rain  </span> ("+ list_array[i].weather.description + ") <br>"+
+                "<span class='norm'>Rain Total </span> (over 3 hours)  " + list_array[i].rain.3h + "mm <br>" ;
+            break;
+        case "snow":
+            string_word= "<span class='norm'>Snow  </span> ("+ list_array[i].weather.description + ") <br>"+
+                "<span class='norm'>Snow Total </span> (over 3 hours)  " + list_array[i].snow.3h + "mm <br>" ;
+            break;
+            break;
+    }
+    return string_word;
+}
+
+
+/*
+
+let wind_img= imageGrab("wind");
+let wind = document.createElement("p");
+wind.innerHTML=  "<span class='norm'>Humidity:  </span>"+ list_array[i].wind.speed + " miles/hour <br>";
+wind.classList.add("type_words");
+weather_holder_days.appendChild(wind_img);
+weather_holder_days.appendChild(wind);
+
+
+let word= list_array[i].weather.main;
+let  cloud_precip_img= imageGrab(word);
+let  cloud_precip = document.createElement("p");
+cloud_precip.innerHTML= weatherinfo(word);
+cloud_precip.classList.add("type_words");
+weather_holder_days.appendChild(cloud_precip_img);
+weather_holder_days.appendChild(cloud_precip);
+
+
+
+weatherHolder.appendChild(weather_holder_days);
+*/
