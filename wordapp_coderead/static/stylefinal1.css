@@ -1,0 +1,165 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+    position: relative;
+    width: 85%;
+}
+
+.wordbox {
+    text-align: center;
+    width: 80%;
+    border: 2px solid grey;
+    font-family: "Nimbus Sans", sans-serif;
+    font-size: 12pt;
+    height: 15pt;
+    padding-top: 6px;
+    padding-bottom:2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    color: grey;
+    cursor: pointer;
+}
+
+.wordbox:hover{
+    cursor: pointer;
+    border: 2px solid #2eabf6;
+    font-weight: bold;
+    color: #2eabf6;
+}
+
+#lenstyle{
+    display: inline;
+    width: 75%;
+}
+
+#lenstyle li{
+    display: inline-block;
+    font-size: 12pt;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.holder{
+    margin: auto;
+    position: relative;
+    width: 75%;
+}
+
+nav{
+    margin: auto;
+    position: relative;
+    font-family: "Nimbus Sans", sans-serif;
+    padding-top: 10px;
+    font-size: 14pt;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    background-color: grey;
+    color: white;
+}
+
+footer{
+    margin: auto;
+    position: fixed;
+    font-family: "Nimbus Sans", sans-serif;
+    bottom: 0px;
+    text-align: center;
+    font-size: 10pt;
+    width: 100%;
+    background-color: grey;
+    color: white;
+}
+.space{
+    height:30px;
+    margin-top: 10px
+}
+
+h2{
+    font-size: 18pt;
+    font-family: "Nimbus Sans", sans-serif;
+    color: grey;
+    width: 75%;
+    margin: auto;
+    position:relative;
+    margin-bottom: 10px;
+}
+
+label{
+    font-size: 12pt;
+    font-family: "Nimbus Sans", sans-serif;
+    color: grey;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    list-style-type: square;
+}
+
+.error{
+    font-size: 12pt;
+    font-family: "Nimbus Sans", sans-serif;
+    color: #800c00;
+    font-style: italic;
+}
+
+#submit{
+    font-family: "Nimbus Sans", sans-serif;
+    color: grey;
+
+}
+
+a.visited{
+    color: #2eabf6;
+}
+
+a:link {
+    color: #2eabf6;
+}
+
+
+.contentbox{
+    background-color: #fefefe;
+    left:10%;
+    top:25%;
+    padding: 20px;
+    border: 2px solid grey;
+    font-size: 12pt;
+    font-family: "Nimbus Sans", sans-serif;
+    color: grey;
+    font-weight: normal;
+    text-align: left;
+    width: 80%;
+    position:fixed;
+    z-index: 2;
+    display: none;
+}
+.contentbox:hover{
+    background-color: #fefefe;
+    left:10%;
+    top:25%;
+    padding: 20px;
+    border: 2px solid grey;
+    font-size: 12pt;
+    font-family: "Nimbus Sans", sans-serif;
+    color: grey;
+    font-weight: normal;
+    text-align: left;
+    width: 80%;
+    position:fixed;
+    z-index: 2;
+    display: none;
+}
+
+.exit_X{
+    color: grey;
+    float: right;
+    font-size: 18px;
+    font-family: "Nimbus Sans", sans-serif;
+    font-weight: bold;
+}
+
+.exit_X:hover{
+    color: #2eabf6;
+    cursor: pointer;
+}
