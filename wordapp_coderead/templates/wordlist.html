@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>{{statement}}</h2>
+<br/>
+<main id="myMain">
+    {% for word in wordlist: %}
+        <div class="wordbox" onclick="theFunction(event)">{{ word }}
+        <div class="contentbox">
+            <span class="exit_X" onclick="closeX(event)">X</span>
+            <b>{{ word }}</b>
+            <ul>
+            {% for i in defintion_dictionary[word] %}
+                <li>{{i}}</li>
+            {% endfor %}
+            </ul>
+
+        </div>
+        </div>
+    {% endfor %}
+</main>
+
+{% endblock %}
+
+{% block script %}
+
+<script>
+
+
+    function theFunction(e) {
+        e.target.querySelector(".contentbox").style.display  = "block";
+    }
+    function closeX(e){
+        e.target.parentElement.style.display  = "none"
+    }
+
+
+
+</script>
+{% endblock %}
